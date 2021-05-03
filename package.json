@@ -1,0 +1,20 @@
+{
+	"name": "vue-translate",
+	"version": "1.0.0",
+	"description": "\uD83C\uDF43 A useful and lightweight plugin to translate texts in a simple way in Vue 3!",
+	"main": "index.js",
+	"keywords": [
+		"vue",
+		"vue3",
+		"translate",
+		"translator",
+		"gettext",
+		"i18n",
+		"wordpress"
+	],
+	"author": {
+		"name": "Guilherme Almeira Girardi",
+		"email": "guilhermeagirardi@gmail.com"
+	},
+	"license": "MIT"
+}
