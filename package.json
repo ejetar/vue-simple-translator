@@ -1,6 +1,6 @@
 {
 	"name": "vue-simple-translator",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "\uD83C\uDF43 A useful and lightweight plugin to translate texts in a simple way in Vue 3!",
 	"main": "index.js",
 	"keywords": [
@@ -12,7 +12,7 @@
 		"i18n",
 		"wordpress"
 	],
-	"repository": "https://github.com/ejetar/vue-translate",
+	"repository": "https://github.com/ejetar/vue-simple-translator",
 	"author": {
 		"name": "Guilherme Almeira Girardi",
 		"email": "guilhermeagirardi@gmail.com"
