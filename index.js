@@ -1,18 +1,14 @@
 import { LanguageNotAvailableException, DefaultLanguageNotDefined } from './exceptions'
+import _ from 'lodash';
 let options = {};
-const _ = require('lodash');
-
 function translate(text, language = undefined) {
-	if (!language)
-		language = options.defaultLanguage;
+	language = navigator.language ?? options.defaultLanguage;
 
 	//If the selected language is not available
-	if (!_.get(options.availableLanguages, language))
-		throw new LanguageNotAvailableException;
-
-	return options.translations[options.defaultLanguage][text];
+	return !_.get(options.availableLanguages, language)
+		? text
+		: options.translations[language][text];
 }
-
 export default {
 	install: (app, opt) => {
 		options = opt;
@@ -24,3 +20,5 @@ export default {
 		app.config.globalProperties.$translate = translate;
 	}
 }
+
+export {translate};
